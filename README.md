@@ -1,4 +1,3 @@
-# Gerenciamento de Armazenamento
 ![Banco de Dados II - Gerenciamento de Armazenamento](images/title.png)
 
 Este trabalho faz parte da disciplina Banco de Dados II do curso de Sistemas de Informação na [UNI7](https://www.uni7.edu.br/).
