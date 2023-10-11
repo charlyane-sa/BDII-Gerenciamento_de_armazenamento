@@ -5,7 +5,7 @@ Este trabalho faz parte da disciplina Banco de Dados II do curso de Sistemas de 
 
 Link online da apresentação disponível no [Power Point](https://sempreuninassau-my.sharepoint.com/:p:/r/personal/56039246_sempreuni7_com_br/_layouts/15/Doc.aspx?sourcedoc=%7B9F5D8DEC-D375-415E-90D0-C856BBBEC301%7D&file=BDII-Gerenciamento_de_armazenamento.pptx&action=edit&mobileredirect=true).
 ### Equipe
-- Charlyane Araújo ([@charlyane-sa](https://github.com/hugojunior)) - [Páginas](#1-p%C3%A1ginas)
+- Charlyane Araújo ([@charlyane-sa](https://github.com/charlyane-sa)) - [Páginas](#1-p%C3%A1ginas)
 - Matheus Nascimento ([@mtlem](https://github.com/mtlem)) - [Extends](#2-extends)
 - José Leão ([@valterleao](https://github.com/valterleao)) - [Índices](#3-%C3%ADndices)
 - Hugo Júnior ([@hugojunior](https://github.com/hugojunior)) - [Linked Server](#4-linked-server)
