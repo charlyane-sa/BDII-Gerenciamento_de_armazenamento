@@ -47,16 +47,17 @@ Há uma nova página GAM localizada a 64.000 extensões após a primeira página
 
 **Código SQL:**
 ```sql
--- Deletando BD de Filmes caso já exista
+-- Deletando database caso exista
 use master;
-DROP DATABASE IF EXISTS Filmes;
+DROP DATABASE IF EXISTS Matheus;
 
--- Criando BD de Filmes
-CREATE DATABASE Filmes;
+-- Criando BD
+CREATE DATABASE Matheus;
 
--- Utilizar o BD de Filmes
-USE Filmes;
+-- Utilizar o BD
+USE Matheus;
 
+-- Criar a tabela Filmes
 CREATE TABLE Filmes (
     ID INT PRIMARY KEY IDENTITY(1,1),
     NomeFilme VARCHAR(255) NOT NULL,
@@ -82,7 +83,16 @@ VALUES ('Era Uma Vez no Oeste', '1968-12-21', 'Sergio Leone', 'Western', 8.5);
 INSERT INTO Filmes (NomeFilme, DataLancamento, Diretor, Genero, IMDbNota)
 VALUES ('O Senhor dos Aneis: A Sociedade do Anel', '2001-12-19', 'Peter Jackson', 'Fantasia', 8.8);
 
-SELECT * FROM filmes;
+-- Selecionar todos os filmes
+SELECT * FROM Filmes;
 
-EXEC sp_spaceused 'filmes';
+-- Executar DBCC IND
+DBCC IND('Matheus', 'dbo.filmes', 1);
+
+-- Executar DBCC TRACEON e DBCC PAGE
+DBCC TRACEON(3604);
+DBCC PAGE('Matheus', 1, 144, 3);
+
+-- Selecionar informações de alocação de páginas
+SELECT * FROM sys.dm_db_database_page_allocations(DB_ID(), OBJECT_ID('filmes'), NULL, NULL, 'DETAILED');
 ```

@@ -28,15 +28,15 @@ DCM (Differential changed map)   | Informações sobre extensões modificadas de
 
 **Código SQL:**
 ```sql
--- Deletando BD de teste caso já exista
+-- Deletando database caso exista
 use master;
-DROP DATABASE IF EXISTS TestDB;
+DROP DATABASE IF EXISTS Charlyane;
 
--- Criando BD de teste
-CREATE DATABASE TestDB
+-- Criando BD
+CREATE DATABASE Charlyane;
 
--- Utilizar o BD de teste
-USE TestDB
+-- Utilizar o BD
+USE Charlyane;
 
 -- Testando os limites da criacao de paginas
 CREATE TABLE Test (

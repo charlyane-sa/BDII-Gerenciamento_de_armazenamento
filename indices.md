@@ -103,8 +103,8 @@ WHERE Codigo_Estudante = 6;
 Tabela com 5 colunas:                              
 - Codigo_Estudante (Clustered)
 - Curso_Estudante (Nonclustered) 
-- Nome_Estudante     
-- Idade_Estudante      
+- Nome_Estudante
+- Idade_Estudante
 - Genero_Estudante
 
 ```sql
